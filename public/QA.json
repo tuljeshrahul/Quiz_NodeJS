@@ -1,0 +1,105 @@
+{
+    "questions": [
+      {
+        "question": "What is Node.js?",
+        "options": [
+          "A JavaScript framework for building front-end applications",
+          "A server-side platform for building scalable network applications",
+          "A relational database management system",
+          "A cloud computing service provider"
+        ],
+        "correctAnswer": "A server-side platform for building scalable network applications"
+      },
+      {
+        "question": "How does Node.js handle asynchronous operations?",
+        "options": [
+          "Using multithreading",
+          "By putting the event-based model at its core",
+          "By using synchronous functions",
+          "By relying on external libraries for handling asynchronous operations"
+        ],
+        "correctAnswer": "By putting the event-based model at its core"
+      },
+      {
+        "question": "What is the event loop in Node.js?",
+        "options": [
+          "A mechanism for handling synchronous operations",
+          "A component for managing database connections",
+          "The foundation of non-blocking input/output in Node.js",
+          "A feature for parallel processing of tasks"
+        ],
+        "correctAnswer": "The foundation of non-blocking input/output in Node.js"
+      },
+      {
+        "question": "What are the pros and cons of using Node.js?",
+        "options": [
+          "Pros: Scalability, Cons: Limited community support",
+          "Pros: Non-blocking I/O, Cons: Limited module availability",
+          "Pros: Full-stack JavaScript, Cons: Intensive CPU computation blocks responsiveness",
+          "Pros: Multithreading, Cons: Limited database integration"
+        ],
+        "correctAnswer": "Pros: Full-stack JavaScript, Cons: Intensive CPU computation blocks responsiveness"
+      },
+      {
+        "question": "How does Node.js overcome the problem of blocking I/O operations?",
+        "options": [
+          "By using multithreading for I/O operations",
+          "By relying on external libraries for I/O operations",
+          "By putting the event-based model at its core",
+          "By using synchronous functions for I/O operations"
+        ],
+        "correctAnswer": "By putting the event-based model at its core"
+      },
+      {
+        "question": "What does event-driven programming mean in the context of Node.js?",
+        "options": [
+          "Using events to trigger database queries",
+          "Using events to trigger various functions",
+          "Using events to handle user interface interactions",
+          "Using events to manage server-side caching"
+        ],
+        "correctAnswer": "Using events to trigger various functions"
+      },
+      {
+        "question": "What is the purpose of process.nextTick() in Node.js?",
+        "options": [
+          "To schedule a callback function to be invoked in the next iteration of the event loop",
+          "To handle CPU-intensive computations",
+          "To manage database connections",
+          "To execute synchronous functions"
+        ],
+        "correctAnswer": "To schedule a callback function to be invoked in the next iteration of the event loop"
+      },
+      {
+        "question": "How does Node.js handle concurrency despite being single-threaded?",
+        "options": [
+          "By creating multiple threads for concurrent processing",
+          "By relying on external libraries for concurrency management",
+          "By using the libuv library to manage asynchronous calls",
+          "By executing synchronous functions in parallel"
+        ],
+        "correctAnswer": "By using the libuv library to manage asynchronous calls"
+      },
+      {
+        "question": "What is the purpose of setImmediate() in Node.js?",
+        "options": [
+          "To schedule a callback function to be invoked in the next iteration of the event loop",
+          "To handle CPU-intensive computations",
+          "To manage database connections",
+          "To execute synchronous functions"
+        ],
+        "correctAnswer": "To schedule a callback function to be invoked in the next iteration of the event loop"
+      },
+      {
+        "question": "What is the significance of the Buffer class in Node.js?",
+        "options": [
+          "To manage server-side caching",
+          "To perform operations on raw binary data",
+          "To handle user interface interactions",
+          "To trigger database queries"
+        ],
+        "correctAnswer": "To perform operations on raw binary data"
+      }
+    ]
+  }
+  

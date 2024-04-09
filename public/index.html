@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ</title>
+</head>
+<body>
+  <h1>NODE JS QUIZ</h1>
+    <form id="quizForm" action="submit" method="post">
+    </form>
+
+  <script>
+    //Fetching data from json file to display to user
+    fetch('QA.json')
+      .then(response => response.json())
+      .then(data => {
+        const form = document.getElementById('quizForm');
+        let quizData = data.questions;
+        data.questions.forEach((question, index) => {
+        form.innerHTML += `
+        <p>${index+1}. ${question.question}</p>
+        ${question.options.map(option => `
+          <input type="radio" id="option${index}_${option}" name="${index}" value="${option}">
+          <label for="option${index}_${option}">${option}</label><br>
+        `).join('')}
+        <br>
+      `;
+    });
+    form.innerHTML+=`<input type="submit" value="Submit">`
+      })
+      .catch(error => console.error('Error fetching JSON:', error));
+  </script>
+</body>
+</html>
